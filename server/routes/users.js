@@ -134,6 +134,7 @@ router.post("/save", authMiddleware, async (req, res) => {
       adm2,
       adm3,
       address,
+      details,
       lon,
       lat,
       dob,
@@ -181,6 +182,7 @@ router.post("/save", authMiddleware, async (req, res) => {
       userQueried.adm2 = adm2;
       userQueried.adm3 = adm3;
       userQueried.address = address;
+      userQueried.details = details;
       userQueried.lon = +lon;
       userQueried.lat = +lat;
       if(dob) userQueried.dob = +dob;

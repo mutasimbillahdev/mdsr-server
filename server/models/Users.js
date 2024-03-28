@@ -11,6 +11,7 @@ const
     adm2: { type: String, default: '' },
     adm3: { type: String, default: '' },
     address: { type: String, default: '' },
+    details: { type: String, default: '' },
     lon: { type: Number, default: null },
     lat: { type: Number, default: null },
     dob: { type: Number, default: null },
