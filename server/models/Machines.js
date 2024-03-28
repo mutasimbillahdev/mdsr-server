@@ -6,6 +6,7 @@ const
     description: { type: String, default: '' },
     owner: { type: Schema.Types.ObjectId, ref: "users", required: true },
     manufacturer: { type: String },
+    price: { type: String, default: "" },
     pictures: [
       { type: Schema.Types.ObjectId, ref: "images", required: true }
     ]

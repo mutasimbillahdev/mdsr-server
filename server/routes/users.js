@@ -289,6 +289,7 @@ router.post("/save", authMiddleware, async (req, res) => {
             machineQueried.name = machine.name;
             machineQueried.description = machine.description;
             machineQueried.manufacturer = machine.manufacturer;
+            machineQueried.price = machine.price;
 
             await machineQueried.save();
 
@@ -299,7 +300,8 @@ router.post("/save", authMiddleware, async (req, res) => {
                 name: machine.name,
                 description: machine.description,
                 owner: idUser,
-                manufacturer: machine.manufacturer
+                manufacturer: machine.manufacturer,
+                manufacturer: machine.price
               }),
               savedMachine = await newMachine.save();
 
